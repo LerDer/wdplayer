@@ -41,11 +41,11 @@
 
 下面放一张全家福
 
-<img src="/Users/lww/Library/Application Support/typora-user-images/image-20241123234903050.png" alt="image-20241123234903050" style="zoom:50%;" />
+<img src="/doc/image-20241123234903050.png" alt="image-20241123234903050" style="zoom:50%;" />
 
-<img src="/Users/lww/Library/Application Support/typora-user-images/image-20241123235052699.png" alt="image-20241123235052699" style="zoom:50%;" />
+<img src="/doc/image-20241123235052699.png" alt="image-20241123235052699" style="zoom:50%;" />
 
-<img src="/Users/lww/Library/Application Support/typora-user-images/image-20241123235919881.png" alt="image-20241123235919881" style="zoom:50%;" />
+<img src="/doc/image-20241123235919881.png" alt="image-20241123235919881" style="zoom:50%;" />
 
 ### 待解决问题
 

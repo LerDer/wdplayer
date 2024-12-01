@@ -1,0 +1,2 @@
+2024-11-29 11:45:06.240 WARN  []   --[           main] c.b.m.core.metadata.TableInfoHelper      [329] : Can not find table primary key in Class: "com.wd.player.database.entity.SongPlaylistMid".
+2024-11-29 11:45:07.093 INFO  []   --[           main] com.alibaba.druid.pool.DruidDataSource   [995] : {dataSource-1} inited

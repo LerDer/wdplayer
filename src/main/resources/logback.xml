@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property scope="context" name="LOG_PATH" value="log"/>
+    <property name="LOG_PATTERN_NO_COLOR" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%X{TraceId:-}] ${PID:- } --[%15.15t] %-40.40logger{39} [%L] : %msg%n"/>
+    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss} [%p] [%.10t] [%c{1}][%L] [%X{TraceId}] %m%n"/>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${LOG_PATTERN_NO_COLOR}</pattern>
+            <charset>utf-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/play.log</file>
+        <encoder>
+            <pattern>${LOG_PATTERN_NO_COLOR}</pattern>
+            <charset>utf-8</charset>
+        </encoder>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/play.log.%d{yyyy-MM-dd}.gz</fileNamePattern>
+            <maxHistory>10</maxHistory>
+        </rollingPolicy>
+
+    </appender>
+
+    <logger name="com.wd" level="INFO"/>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+</configuration>
